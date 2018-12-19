@@ -1,0 +1,40 @@
+@model Patient
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>
+    Generator naklejek
+</h2>
+
+<div class="row">
+    <div class="col-4">
+<form asp-action="GeneratePatientLabel">
+
+    <div class="form-group">
+        <label class="control-label">Imię</label>   
+        <input asp-for="FirstName" class="form-control" />        
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Nazwisko</label>
+        <input asp-for="LastName" class="form-control" />        
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">PESEL</label>
+        <input asp-for="Pesel" class="form-control" />        
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Nr Księgi Głównej</label>
+        <input asp-for="BookNumber" class="form-control" />        
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Generuj" class="btn btn-outline-success" />
+    </div>
+</form>
+</div>
+</div>

@@ -1,0 +1,33 @@
+\documentclass[a4paper,5pt]{article}
+\usepackage{latexsym}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[MeX]{polski}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage[table]{xcolor}
+\usepackage{blindtext,titlefoot}
+\usepackage{wrapfig}
+
+    \geometry{
+    a4paper,
+    total={210mm,297mm},
+    left=0mm,
+    top=0mm,
+    }
+
+    \pagenumbering{gobble}
+    \date{}
+
+    \begin{document}   
+    \begin{table}[H]        
+        \begin{tabular}{ |b{105mm} | b{105mm} |}
+            \hline
+            \parbox[c][148mm]{105mm}{Szpital w Śremie \newline KG 00/001 \newline Jan Kowalski \newline   PESEL: 65468456465} &
+            \parbox[c][148mm]{105mm}{Szpital w Śremie \newline KG 00/001 \newline Jan Kowalski \newline   PESEL: 65468456465} \\ \hline
+            \parbox[c][148mm]{105mm}{Szpital w Śremie \newline KG 00/001 \newline Jan Kowalski \newline   PESEL: 65468456465} &
+            \parbox[c][148mm]{105mm}{Szpital w Śremie \newline KG 00/001 \newline Jan Kowalski \newline   PESEL: 65468456465} \\
+        \hline        
+        \end{tabular}
+        \end{table}
+    \end{document}
